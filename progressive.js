@@ -2,7 +2,6 @@ function setProgressiveProfile(spreadsheetID){
   var form = document.getElementById("conversion-form");
   form.setAttribute("onsubmit", "setLeadProfile()");
   var numberOfLevels = -1;
-  var isAgency = false;
   var formHasEmail = false;
   var userLevel;
 
