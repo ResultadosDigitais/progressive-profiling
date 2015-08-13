@@ -5,12 +5,12 @@ Solução de progressive profiling para Landing Pages do RD Station
 
 1. Fazer uma cópia da planilha modelo encontrada no link: [Modelo Campos dos Formulários](https://docs.google.com/spreadsheets/d/1cJ5aKZgMTXyY79FOVANFfHSKKnYLijUrvcz4IuBCumc/edit#gid=0)
 
-2. Tornar esta nova planilha pública.
+2. Tornar esta nova planilha pública em File -> Publish to the Web (não é o mesmo que compartilhar a planilha para qualaquer um com o link).
 
-3. Agora vá em Editar nas Landing Pages que serão alteradas, vá em aparências e adicione o seguinte JavaScript (o primeiro campo)
+3. Agora vá em Editar nas Landing Pages que serão alteradas, vá em aparências e adicione o seguinte JavaScript em HEAD (o primeiro campo)
 
  ```HTML
-  <script src="https://raw.githubusercontent.com/ResultadosDigitais/progressive-profiling/master/progressive.js"></script>
+  <script src="https://cdn.rawgit.com/ResultadosDigitais/progressive-profiling/master/progressive.js"></script>
  ```
 
 4. Ainda em aparências, insira o seguinte JavaScript em BODY (é necessário clicar no texto para expandir)

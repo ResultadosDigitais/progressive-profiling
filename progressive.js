@@ -1,4 +1,4 @@
-function setProgressiveProfile(spreadsheetID){
+function setProgressiveProfiling(spreadsheetID){
   var form = document.getElementById("conversion-form");
   form.setAttribute("onsubmit", "setLeadProfile()");
   var numberOfLevels = -1;
@@ -22,7 +22,7 @@ function setProgressiveProfile(spreadsheetID){
       // get fields from spread sheet in google drive
       $.getJSON( jsUrl, function(result){
 
-        try { _gaq.push(['_trackEvent', "ProgressiveProfile", ("form_seen_" + progProfile.userLevel)]); } catch(err) { };
+        try { _gaq.push(['_trackEvent', "ProgressiveProfiling", ("form_seen_" + progProfile.userLevel)]); } catch(err) { };
 
         var fields = [];
         var entries = result.feed.entry;
@@ -44,7 +44,7 @@ function setProgressiveProfile(spreadsheetID){
         setForm(progProfile, fields);
       })
       .error(function() {
-        try { _gaq.push(['_trackEvent', "ProgressiveProfile", "form_seen_err"]); } catch(err) { };
+        try { _gaq.push(['_trackEvent', "ProgressiveProfiling", "form_seen_err"]); } catch(err) { };
       });
     }
   }
@@ -57,9 +57,9 @@ function setProgressiveProfile(spreadsheetID){
       var date = new Date();
 
       if (numberOfLevels == -1){
-        try { _gaq.push(['_trackEvent', "ProgressiveProfile", "form_conv_err"]); } catch(err) { };
+        try { _gaq.push(['_trackEvent', "ProgressiveProfiling", "form_conv_err"]); } catch(err) { };
       }else {
-        try { _gaq.push(['_trackEvent', "ProgressiveProfile", ("form_conv_" + userLevel)]); } catch(err) { };
+        try { _gaq.push(['_trackEvent', "ProgressiveProfiling", ("form_conv_" + userLevel)]); } catch(err) { };
       }
 
       if(localStorage.progProfile){
