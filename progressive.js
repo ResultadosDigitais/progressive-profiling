@@ -4,6 +4,8 @@ function setProgressiveProfiling(spreadsheetID){
   var numberOfLevels = -1;
   var formHasEmail = false;
   var userLevel;
+  
+  getForms();
 
   function getForms(){
 
