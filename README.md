@@ -10,7 +10,7 @@ Solução de progressive profiling para Landing Pages do RD Station
 3. Agora vá em Editar nas Landing Pages que serão alteradas, vá em aparências e adicione o seguinte JavaScript em HEAD (o primeiro campo)
 
  ```HTML
-  <script src="https://cdn.rawgit.com/ResultadosDigitais/progressive-profiling/master/progressive.js"></script>
+  <script src="https://cdn.rawgit.com/ResultadosDigitais/progressive-profiling/v1.0/progressive.min.js"></script>
  ```
 
 4. Ainda em aparências, insira o seguinte JavaScript em BODY (é necessário clicar no texto para expandir)
