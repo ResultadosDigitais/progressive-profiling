@@ -17,7 +17,7 @@ Solução de progressive profiling para Landing Pages do RD Station
  Obs: É necessario o saber o id da sua planilha. Esse id é o conjunto de caracters encontrado entre o "/d/" e o "/edit" no link da sua planilha.
  ```HTML
   <script>
-    setProgressiveProfiling(“COLE-AQUI-O-ID-DA-SUA-PLANILHA”);
+    setProgressiveProfiling("COLE-AQUI-O-ID-DA-SUA-PLANILHA");
   </script>
  ```
 
