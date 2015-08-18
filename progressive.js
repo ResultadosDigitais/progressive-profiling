@@ -1,11 +1,12 @@
 
-var form = document.getElementById("conversion-form");
-form.setAttribute("onsubmit", "setLeadProfile()");
+var form;
 var numberOfLevels = -1;
 var formHasEmail = false;
 var userLevel;
 
 function setProgressiveProfiling(spreadsheetID){
+  form = document.getElementById("conversion-form");
+  form.setAttribute("onsubmit", "setLeadProfile()");
   if(typeof(Storage) !== "undefined") {
     var progProfile;
     if (localStorage.progProfile){
