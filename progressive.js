@@ -10,7 +10,7 @@ function setProgressiveProfiling(spreadsheetID){
   progessiveProfiling = form.getAttribute("data-progressive-profiling");
 
   // Native progressive profiling active
-  if (progessiveProfiling === null) {
+  if (progessiveProfiling !== null) {
     return;
   }
 
