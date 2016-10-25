@@ -3,14 +3,14 @@ var form;
 var numberOfLevels = -1;
 var formHasEmail = false;
 var userLevel;
-var progessiveProfiling;
+var progressiveProfiling;
 
 function setProgressiveProfiling(spreadsheetID){
   form = document.getElementById("conversion-form");
-  progessiveProfiling = form.getAttribute("data-progressive-profiling");
+  progressiveProfiling = form.getAttribute("data-progressive-profiling");
 
   // Native progressive profiling active
-  if (progessiveProfiling !== null) {
+  if (progressiveProfiling !== null) {
     return;
   }
 
